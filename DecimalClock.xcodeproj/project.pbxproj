@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD702C3214E1ACC400A16417 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD702C3114E1ACC400A16417 /* Cocoa.framework */; };
+		CD702C3C14E1ACC400A16417 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD702C3A14E1ACC400A16417 /* InfoPlist.strings */; };
+		CD702C3E14E1ACC400A16417 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD702C3D14E1ACC400A16417 /* main.m */; };
+		CD702C4214E1ACC400A16417 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CD702C4014E1ACC400A16417 /* Credits.rtf */; };
+		CD702C4514E1ACC400A16417 /* JBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD702C4414E1ACC400A16417 /* JBAppDelegate.m */; };
+		CD702C4814E1ACC500A16417 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD702C4614E1ACC500A16417 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD702C2D14E1ACC400A16417 /* DecimalClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecimalClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD702C3114E1ACC400A16417 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CD702C3414E1ACC400A16417 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CD702C3514E1ACC400A16417 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CD702C3614E1ACC400A16417 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD702C3914E1ACC400A16417 /* DecimalClock-Info.plist */ = {isa = PBXFileReference; path = "DecimalClock-Info.plist"; sourceTree = "<group>"; };
+		CD702C3B14E1ACC400A16417 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD702C3D14E1ACC400A16417 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD702C3F14E1ACC400A16417 /* DecimalClock-Prefix.pch */ = {isa = PBXFileReference; path = "DecimalClock-Prefix.pch"; sourceTree = "<group>"; };
+		CD702C4114E1ACC400A16417 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CD702C4314E1ACC400A16417 /* JBAppDelegate.h */ = {isa = PBXFileReference; path = JBAppDelegate.h; sourceTree = "<group>"; };
+		CD702C4414E1ACC400A16417 /* JBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBAppDelegate.m; sourceTree = "<group>"; };
+		CD702C4714E1ACC500A16417 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD702C2A14E1ACC400A16417 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD702C3214E1ACC400A16417 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD702C2214E1ACC400A16417 = {
+			isa = PBXGroup;
+			children = (
+				CD702C3714E1ACC400A16417 /* DecimalClock */,
+				CD702C3014E1ACC400A16417 /* Frameworks */,
+				CD702C2E14E1ACC400A16417 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD702C2E14E1ACC400A16417 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD702C2D14E1ACC400A16417 /* DecimalClock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD702C3014E1ACC400A16417 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD702C3114E1ACC400A16417 /* Cocoa.framework */,
+				CD702C3314E1ACC400A16417 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD702C3314E1ACC400A16417 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD702C3414E1ACC400A16417 /* AppKit.framework */,
+				CD702C3514E1ACC400A16417 /* CoreData.framework */,
+				CD702C3614E1ACC400A16417 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CD702C3714E1ACC400A16417 /* DecimalClock */ = {
+			isa = PBXGroup;
+			children = (
+				CD702C4314E1ACC400A16417 /* JBAppDelegate.h */,
+				CD702C4414E1ACC400A16417 /* JBAppDelegate.m */,
+				CD702C4614E1ACC500A16417 /* MainMenu.xib */,
+				CD702C3814E1ACC400A16417 /* Supporting Files */,
+			);
+			path = DecimalClock;
+			sourceTree = "<group>";
+		};
+		CD702C3814E1ACC400A16417 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD702C3914E1ACC400A16417 /* DecimalClock-Info.plist */,
+				CD702C3A14E1ACC400A16417 /* InfoPlist.strings */,
+				CD702C3D14E1ACC400A16417 /* main.m */,
+				CD702C3F14E1ACC400A16417 /* DecimalClock-Prefix.pch */,
+				CD702C4014E1ACC400A16417 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD702C2C14E1ACC400A16417 /* DecimalClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD702C4B14E1ACC500A16417 /* Build configuration list for PBXNativeTarget "DecimalClock" */;
+			buildPhases = (
+				CD702C2914E1ACC400A16417 /* Sources */,
+				CD702C2A14E1ACC400A16417 /* Frameworks */,
+				CD702C2B14E1ACC400A16417 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DecimalClock;
+			productName = DecimalClock;
+			productReference = CD702C2D14E1ACC400A16417 /* DecimalClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD702C2414E1ACC400A16417 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Jason Brennan";
+			};
+			buildConfigurationList = CD702C2714E1ACC400A16417 /* Build configuration list for PBXProject "DecimalClock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD702C2214E1ACC400A16417;
+			productRefGroup = CD702C2E14E1ACC400A16417 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD702C2C14E1ACC400A16417 /* DecimalClock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD702C2B14E1ACC400A16417 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD702C3C14E1ACC400A16417 /* InfoPlist.strings in Resources */,
+				CD702C4214E1ACC400A16417 /* Credits.rtf in Resources */,
+				CD702C4814E1ACC500A16417 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD702C2914E1ACC400A16417 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD702C3E14E1ACC400A16417 /* main.m in Sources */,
+				CD702C4514E1ACC400A16417 /* JBAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD702C3A14E1ACC400A16417 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD702C3B14E1ACC400A16417 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CD702C4014E1ACC400A16417 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD702C4114E1ACC400A16417 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CD702C4614E1ACC500A16417 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD702C4714E1ACC500A16417 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD702C4914E1ACC500A16417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CD702C4A14E1ACC500A16417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CD702C4C14E1ACC500A16417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DecimalClock/DecimalClock-Prefix.pch";
+				INFOPLIST_FILE = "DecimalClock/DecimalClock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CD702C4D14E1ACC500A16417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DecimalClock/DecimalClock-Prefix.pch";
+				INFOPLIST_FILE = "DecimalClock/DecimalClock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD702C2714E1ACC400A16417 /* Build configuration list for PBXProject "DecimalClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD702C4914E1ACC500A16417 /* Debug */,
+				CD702C4A14E1ACC500A16417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD702C4B14E1ACC500A16417 /* Build configuration list for PBXNativeTarget "DecimalClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD702C4C14E1ACC500A16417 /* Debug */,
+				CD702C4D14E1ACC500A16417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD702C2414E1ACC400A16417 /* Project object */;
+}
