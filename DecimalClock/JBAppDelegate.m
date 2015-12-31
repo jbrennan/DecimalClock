@@ -32,17 +32,24 @@ static NSTimer *timer = nil;
 	[self.statusItem setHighlightMode:YES];
 	[self.statusItem setMenu:self.appMenu];
 	
-	[self performSelector:@selector(timerFired:) withObject:nil afterDelay:2];
 	//timer = [NSTimer timerWithTimeInterval:5 target:self selector:@selector(timerFired:) userInfo:nil repeats:YES];
 	//[timer fire];
+	[self timerFired:nil];
 }
 
 
 - (void)timerFired:(id)sender {
 	//NSLog(@"%@", [NSDate decimalTimeString]);
-	[self.statusItem setTitle:[NSDate decimalTimeString]];
-	[self performSelector:@selector(timerFired:) withObject:nil afterDelay:2];
+	[self.statusItem setTitle:[NSDate daysSinceBirthdateString]];
+	[self setupTimer];
 
+}
+
+
+- (void)setupTimer {
+	// Should really do this with something like NSUserNotification instead, much less resource intensive!
+	[self performSelector:@selector(timerFired:) withObject:nil afterDelay:60*60];
+	
 }
 
 - (IBAction)showPreferencesWindow:(NSMenuItem *)sender {

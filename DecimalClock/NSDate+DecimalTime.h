@@ -11,6 +11,7 @@
 @interface NSDate (DecimalTime)
 
 + (NSString *)decimalTimeString;
++ (NSString *)daysSinceBirthdateString;
 - (NSDate *)dateAtMidnight;
 
 @end

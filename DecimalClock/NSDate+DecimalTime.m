@@ -24,6 +24,32 @@
 }
 
 
++ (NSString *)daysSinceBirthdateString {
+	
+	NSDate *today = [[NSDate date] dateAtMidnight];
+	NSDate *birthday = [NSDate dateWithNaturalLanguageString:@"June 27 1988"];
+	return [NSString stringWithFormat:@"%ld", [self daysBetweenDate:birthday andDate:today]];
+}
+
++ (NSInteger)daysBetweenDate:(NSDate*)fromDateTime andDate:(NSDate*)toDateTime
+{
+	NSDate *fromDate;
+	NSDate *toDate;
+	
+	NSCalendar *calendar = [NSCalendar currentCalendar];
+	
+	[calendar rangeOfUnit:NSCalendarUnitDay startDate:&fromDate
+				 interval:NULL forDate:fromDateTime];
+	[calendar rangeOfUnit:NSCalendarUnitDay startDate:&toDate
+				 interval:NULL forDate:toDateTime];
+	
+	NSDateComponents *difference = [calendar components:NSCalendarUnitDay
+											   fromDate:fromDate toDate:toDate options:0];
+	
+	return [difference day];
+}
+
+
 - (NSDate *)dateAtMidnight {
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 	formatter.dateFormat = @"yyyy-M-d";
