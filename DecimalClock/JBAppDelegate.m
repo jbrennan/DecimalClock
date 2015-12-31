@@ -8,12 +8,14 @@
 
 #import "JBAppDelegate.h"
 #import "NSDate+DecimalTime.h"
+#import "JBPreferencesWindowController.h"
 
 
 static NSTimer *timer = nil;
 
 @interface JBAppDelegate ()
 @property (nonatomic, strong) NSStatusItem *statusItem;
+@property (nonatomic, strong, readonly) JBPreferencesWindowController *preferencesWindowController;
 @end
 
 @implementation JBAppDelegate
@@ -21,6 +23,7 @@ static NSTimer *timer = nil;
 @synthesize window = _window;
 @synthesize appMenu = _appMenu;
 @synthesize statusItem = _statusItem;
+@synthesize preferencesWindowController = _preferencesWindowController;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	
@@ -36,10 +39,24 @@ static NSTimer *timer = nil;
 
 
 - (void)timerFired:(id)sender {
-	NSLog(@"%@", [NSDate decimalTimeString]);
+	//NSLog(@"%@", [NSDate decimalTimeString]);
 	[self.statusItem setTitle:[NSDate decimalTimeString]];
 	[self performSelector:@selector(timerFired:) withObject:nil afterDelay:2];
 
 }
+
+- (IBAction)showPreferencesWindow:(NSMenuItem *)sender {
+	[self.preferencesWindowController showWindow:nil];
+}
+
+
+- (JBPreferencesWindowController *)preferencesWindowController {
+	if (nil != _preferencesWindowController)
+		return _preferencesWindowController;
+	
+	_preferencesWindowController = [[JBPreferencesWindowController alloc] initWithWindowNibName:@"JBPreferencesWindowController" owner:self];
+	return _preferencesWindowController;
+}
+
 
 @end

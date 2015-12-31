@@ -13,4 +13,5 @@
 @property (assign) IBOutlet NSWindow *window;
 @property (strong) IBOutlet NSMenu *appMenu;
 
+- (IBAction)showPreferencesWindow:(NSMenuItem *)sender;
 @end

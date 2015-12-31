@@ -14,6 +14,8 @@
 		CD702C4514E1ACC400A16417 /* JBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD702C4414E1ACC400A16417 /* JBAppDelegate.m */; };
 		CD702C4814E1ACC500A16417 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD702C4614E1ACC500A16417 /* MainMenu.xib */; };
 		CD702C5014E1ACEA00A16417 /* NSDate+DecimalTime.m in Sources */ = {isa = PBXBuildFile; fileRef = CD702C4F14E1ACEA00A16417 /* NSDate+DecimalTime.m */; };
+		CD933767156ECB6E0045A629 /* JBPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD933765156ECB6E0045A629 /* JBPreferencesWindowController.m */; };
+		CD933768156ECB6E0045A629 /* JBPreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD933766156ECB6E0045A629 /* JBPreferencesWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		CD702C4714E1ACC500A16417 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		CD702C4E14E1ACEA00A16417 /* NSDate+DecimalTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+DecimalTime.h"; path = "DecimalClock/NSDate+DecimalTime.h"; sourceTree = "<group>"; };
 		CD702C4F14E1ACEA00A16417 /* NSDate+DecimalTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DecimalTime.m"; path = "DecimalClock/NSDate+DecimalTime.m"; sourceTree = "<group>"; };
+		CD933764156ECB6E0045A629 /* JBPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBPreferencesWindowController.h; sourceTree = "<group>"; };
+		CD933765156ECB6E0045A629 /* JBPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBPreferencesWindowController.m; sourceTree = "<group>"; };
+		CD933766156ECB6E0045A629 /* JBPreferencesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JBPreferencesWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +96,9 @@
 				CD702C4414E1ACC400A16417 /* JBAppDelegate.m */,
 				CD702C4614E1ACC500A16417 /* MainMenu.xib */,
 				CD702C3814E1ACC400A16417 /* Supporting Files */,
+				CD933764156ECB6E0045A629 /* JBPreferencesWindowController.h */,
+				CD933765156ECB6E0045A629 /* JBPreferencesWindowController.m */,
+				CD933766156ECB6E0045A629 /* JBPreferencesWindowController.xib */,
 			);
 			path = DecimalClock;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 				CD702C3C14E1ACC400A16417 /* InfoPlist.strings in Resources */,
 				CD702C4214E1ACC400A16417 /* Credits.rtf in Resources */,
 				CD702C4814E1ACC500A16417 /* MainMenu.xib in Resources */,
+				CD933768156ECB6E0045A629 /* JBPreferencesWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +183,7 @@
 				CD702C3E14E1ACC400A16417 /* main.m in Sources */,
 				CD702C4514E1ACC400A16417 /* JBAppDelegate.m in Sources */,
 				CD702C5014E1ACEA00A16417 /* NSDate+DecimalTime.m in Sources */,
+				CD933767156ECB6E0045A629 /* JBPreferencesWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
